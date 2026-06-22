@@ -148,7 +148,7 @@ I'm **Nika**, a passionate Swiss developer who loves creating beautiful, useful 
 
 📧 Contact Me
 
-🌐 Portfolio
+🌐 Portfolio https://stannik.tech/
 
 🐙 GitHub
 
