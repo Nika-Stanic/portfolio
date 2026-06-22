@@ -1,0 +1,282 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nika Stanic | Portfolio</title>
+
+  <style>
+    :root {
+      --pink: #ff69b4;
+      --light-pink: #ffe4f2;
+      --soft-pink: #ffc0cb;
+      --dark: #2b2b2b;
+      --white: #ffffff;
+      --purple: #8e44ad;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fff0f7, #ffe4f2);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      max-width: 850px;
+      background: rgba(255, 255, 255, 0.75);
+      padding: 50px;
+      border-radius: 30px;
+      box-shadow: 0 20px 50px rgba(255, 105, 180, 0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--pink);
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 1.4rem;
+      color: var(--purple);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 8px;
+      border-radius: 30px;
+      background: var(--pink);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      font-size: 2.3rem;
+      color: var(--pink);
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.18);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      color: var(--purple);
+      margin-bottom: 15px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: var(--light-pink);
+      color: var(--pink);
+      padding: 10px 16px;
+      border-radius: 20px;
+      margin: 6px;
+      font-weight: bold;
+    }
+
+    .timeline {
+      background: white;
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.18);
+      margin-bottom: 25px;
+    }
+
+    .timeline h3 {
+      color: var(--purple);
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--pink);
+      color: white;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero {
+        padding: 35px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>🌸 Hi, I'm Nika Stanic 🌸</h1>
+      <h2>🇨🇭 Swiss Developer • Freelance • Future Medical Informatics Student</h2>
+
+      <p>
+        💻 CFC in Information Technology <br />
+        🏆 Diploma Project Grade: <strong>5.9 / 6.0</strong> <br />
+        🚀 Freelance Developer <br />
+        🏥 Future Medizininformatikerin
+      </p>
+
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">🎀 About Me</h2>
+
+    <div class="card">
+      <p>
+        I'm a passionate Swiss developer who loves creating beautiful, useful and innovative digital solutions.
+        After completing my CFC in Information Technology, I gained professional experience as a Front-End Developer
+        at Artionet.Group, where I worked on real client websites, SEO, testing automation and UI design.
+      </p>
+      <br />
+      <p>
+        Today, I also work as a freelance developer and I am preparing my future studies in Medical Informatics.
+        My goal is to combine technology and healthcare to build solutions that truly help people.
+      </p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">💼 Experience</h2>
+
+    <div class="timeline">
+      <h3>Front-End Developer Intern — Artionet.Group</h3>
+      <p><strong>August 2024 – June 2025</strong> | Delémont, Switzerland</p>
+      <br />
+      <p>
+        Website development using IceCube2.Net CMS, HTML, CSS, JavaScript and PHP.
+        SEO optimization, content integration, manual testing, automated testing with Ghost Inspector
+        and website mockups with Figma.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <h3>Freelance Developer</h3>
+      <p><strong>Current</strong></p>
+      <br />
+      <p>
+        Development of websites, automation tools, API integrations, custom web solutions and technical support.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">🛠️ Skills</h2>
+
+    <div class="card skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>PHP</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>C++</span>
+      <span>Arduino</span>
+      <span>APIs</span>
+      <span>Figma</span>
+      <span>SEO</span>
+      <span>GitHub</span>
+      <span>Ghost Inspector</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">🚀 Projects</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🌐 Web Development</h3>
+        <p>Modern websites, landing pages and client projects with responsive design.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚡ Automation Tools</h3>
+        <p>Scripts and tools to automate repetitive tasks and improve workflows.</p>
+      </div>
+
+      <div class="card">
+        <h3>🏥 HealthTech Projects</h3>
+        <p>Future projects combining medical informatics, data and software development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">💌 Contact</h2>
+
+    <div class="card" style="text-align:center;">
+      <p>Let's build something beautiful together ✨</p>
+      <br />
+      <p>📧 your.email@example.com</p>
+      <p>💼 LinkedIn: your-linkedin</p>
+      <p>🐙 GitHub: your-github</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌸 Made with love, coffee and code by Nika Stanic 🌸</p>
+  </footer>
+
+</body>
+</html>
+```
